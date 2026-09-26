@@ -1,0 +1,31 @@
+# Mohlins Konditori – inställningar för webbhotell med Apache/LiteSpeed.
+# Filen ignoreras av andra servrar och när sidan öppnas direkt från disk.
+
+# Gamla WordPress-adresser skickas vidare till motsvarande nya sida (301 = permanent),
+# så att länkar från Google och andra sajter fortsätter att fungera.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^sortiment/tartor/?$         /sortiment.html#tartor    [R=301,NE,L]
+  RewriteRule ^sortiment/kaffebrod/?$      /sortiment.html#kaffebrod [R=301,NE,L]
+  RewriteRule ^sortiment/specialtartor/?$  /sortiment.html#special   [R=301,NE,L]
+  RewriteRule ^sortiment/?$                /sortiment.html           [R=301,L]
+  RewriteRule ^produkter/.*$               /sortiment.html           [R=301,L]
+  RewriteRule ^omoss/?$                    /#om-oss                  [R=301,NE,L]
+  RewriteRule ^kontakt/?$                  /#besok                   [R=301,NE,L]
+  RewriteRule ^integritetspolicy/?$        /integritetspolicy.html   [R=301,L]
+</IfModule>
+
+# Cachning: bilder och typsnitt länge, HTML kort
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml
+</IfModule>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sortiment – tårtor, kaffebröd &amp; bakverk | Mohlins Konditori</title>
+  <meta name="description" content="Se hela sortimentet hos Mohlins Konditori på Hisingen: 24 tårtor, kransar och kaffebröd, specialtårtor efter önskemål och en disk full av bullar, bakelser och stenugnsbakat bröd.">
+  <meta name="theme-color" content="#c8202a">
+  <link rel="canonical" href="https://mohlinskonditori.se/sortiment.html">
+  <meta property="og:title" content="Sortiment | Mohlins Konditori">
+  <meta property="og:description" content="24 tårtor, kaffebröd, specialtårtor och stenugnsbakat bröd – bakat på plats sedan 1957.">
+  <meta property="og:image" content="https://mohlinskonditori.se/img/foton/frukt_sortiment.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=fraunces:400,600,600i,700,800|jost:400,500,600|sacramento:400&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<script src="js/ikoner.js"></script>
+<a class="hoppa" href="#innehall">Hoppa till innehållet</a>
+
+<div class="toppremsa">
+  <div class="container">
+    <span class="status" data-status>Mån–fre 07.00–18.30 · lör 07.00–14.00</span>
+    <div class="toppremsa-info">
+      <a class="adress" href="index.html#besok"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Gamla Björlandavägen 145</a>
+      <a href="tel:+4631235832"><svg class="icon" aria-hidden="true"><use href="#i-telefon"/></svg>031-23 58 32</a>
+    </div>
+  </div>
+</div>
+
+<header class="sidhuvud" data-sidhuvud>
+  <div class="container">
+    <a class="logga" href="index.html"><img src="img/foton/logoSmall.png" alt="Mohlins Konditori – till startsidan" width="789" height="500"></a>
+    <nav class="huvudmeny" aria-label="Huvudmeny" data-meny>
+      <button class="menyknapp" type="button" aria-expanded="false" aria-controls="menylista">
+        <svg class="icon" aria-hidden="true"><use href="#i-meny"/></svg><span>Meny</span>
+      </button>
+      <ul id="menylista">
+        <li><a href="sortiment.html" aria-current="page">Sortiment</a></li>
+        <li><a href="index.html#tartor">Tårtor</a></li>
+        <li><a href="index.html#om-oss">Om oss</a></li>
+        <li><a href="index.html#besok">Hitta hit</a></li>
+        <li><a class="btn btn-primar btn-liten" href="bestall.html">Beställ tårta</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="innehall">
+  <section class="sidrubrik">
+    <div class="markis markis--smal" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow">Sortiment</p>
+      <h1>Allt vi <em>bakar</em></h1>
+      <p class="lead">24 tårtor, kransar och kaffebröd, specialtårtor efter önskemål – och en disk full av bullar, bakelser och stenugnsbakat bröd. Allt bakat på plats.</p>
+    </div>
+  </section>
+
+  <div class="filterrad">
+    <div class="container">
+      <div class="flikar" role="group" aria-label="Visa kategori">
+        <button class="flik" type="button" data-kategori="alla" aria-pressed="true">Allt</button>
+        <button class="flik" type="button" data-kategori="tartor" aria-pressed="false">Tårtor <span class="antal" data-antal="tartor"></span></button>
+        <button class="flik" type="button" data-kategori="kaffebrod" aria-pressed="false">Kaffebröd <span class="antal" data-antal="kaffebrod"></span></button>
+        <button class="flik" type="button" data-kategori="special" aria-pressed="false">Specialtårtor</button>
+        <button class="flik" type="button" data-kategori="disken" aria-pressed="false">I disken</button>
+      </div>
+      <label class="sok">
+        <span class="visually-hidden">Sök i sortimentet</span>
+        <svg class="icon" aria-hidden="true"><use href="#i-sok"/></svg>
+        <input type="search" placeholder="Sök, t.ex. marsipan eller choklad" autocomplete="off" data-sok>
+      </label>
+    </div>
+  </div>
+
+  <p class="visually-hidden" aria-live="polite" data-sokresultat></p>
+
+  <section class="katalog-sektion" id="tartor" data-sektion="tartor">
+    <div class="container">
+      <header class="katalog-huvud">
+        <div>
+          <h2>Tårtor</h2>
+          <p>Från klassisk prinsesstårta till fransk mocka. Beställ senast dagen innan – så står tårtan klar när du kommer.</p>
+        </div>
+        <a class="btn btn-primar btn-liten" href="bestall.html">Beställ tårta</a>
+      </header>
+      <div class="chips" role="group" aria-label="Filtrera tårtor på innehåll" data-chips></div>
+      <div class="produkt-rutnat" data-lista="tartor"></div>
+    </div>
+  </section>
+
+  <section class="katalog-sektion" id="kaffebrod" data-sektion="kaffebrod">
+    <div class="container">
+      <header class="katalog-huvud">
+        <div>
+          <h2>Kaffebröd</h2>
+          <p>Kransar och kakor på kardemummadeg – till kaffet, kalaset eller fikat på jobbet. Vill du vara säker på att få just din favorit? Ring och beställ.</p>
+        </div>
+        <a class="btn btn-sekundar btn-liten" href="tel:+4631235832">Ring 031-23 58 32</a>
+      </header>
+      <div class="produkt-rutnat" data-lista="kaffebrod"></div>
+    </div>
+  </section>
+
+  <section class="katalog-sektion" id="special" data-sektion="special">
+    <div class="container">
+      <header class="katalog-huvud">
+        <div>
+          <h2>Specialtårtor</h2>
+          <p>Studenten, dopet, födelsedagen eller bröllopet? Vi gör tårtor efter dina önskemål – med text, färg och dekor. Beställ minst tre dagar i förväg. Här är några exempel ur vårt album.</p>
+        </div>
+        <a class="btn btn-primar btn-liten" href="bestall.html?tarta=specialtarta">Beställ specialtårta</a>
+      </header>
+      <div class="album" data-lista="special"></div>
+    </div>
+  </section>
+
+  <section class="katalog-sektion" id="disken" data-sektion="disken">
+    <div class="container">
+      <header class="katalog-huvud">
+        <div>
+          <h2>I disken</h2>
+          <p>Bullar, bakelser, småkakor och bröd från stenugnen. Här är ett urval av det du brukar hitta hos oss.</p>
+        </div>
+      </header>
+      <div class="disk-grupper" data-lista="disken"></div>
+      <div class="notis">
+        <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+        <p>Utbudet i disken varierar med dag och säsong. Undrar du om något finns i dag? Ring oss på <a href="tel:+4631235832">031-23 58 32</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <p class="tomt container" data-tomt hidden>Inget i sortimentet matchar din sökning. Prova ett annat ord – eller <a href="tel:+4631235832">ring och fråga</a>!</p>
+
+  <section class="sektion" style="padding-top: 1rem">
+    <div class="container">
+      <div class="notis notis--mint" style="margin: 0 0 2rem">
+        <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+        <p><strong>Allergier eller specialkost?</strong> Fråga oss innan du köper eller beställer, så berättar vi exakt vad som finns i varje bakverk. Fråga gärna efter glutenfria alternativ.</p>
+      </div>
+      <div class="cta-band">
+        <div>
+          <h2>Dags för kalas?</h2>
+          <p>Beställ tårtan online – ordinarie tårtor senast dagen innan, specialtårtor minst tre dagar innan.</p>
+        </div>
+        <div class="knappar">
+          <a class="btn btn-primar" href="bestall.html">Beställ tårta</a>
+          <a class="btn btn-sekundar" href="tel:+4631235832">Ring oss</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="sidfot kant">
+  <div class="container sidfot-rutnat">
+    <div class="sidfot-varumarke">
+      <img class="sidfot-logga" src="img/foton/logoSmall.png" alt="Mohlins Konditori" width="789" height="500" loading="lazy">
+      <p>Bageri &amp; konditori på Hisingen sedan 1957.<br>Allt bakat på plats, på riktiga råvaror.</p>
+    </div>
+    <div>
+      <h2 class="sidfot-rubrik">Besök oss</h2>
+      <p>Gamla Björlandavägen 145<br>417 16 Göteborg</p>
+      <p><a href="index.html#besok">Hitta hit</a></p>
+    </div>
+    <div>
+      <h2 class="sidfot-rubrik">Öppettider</h2>
+      <p data-tider-kort>Mån – fre 07.00 – 18.30<br>Lördag 07.00 – 14.00<br>Söndag stängt</p>
+    </div>
+    <div>
+      <h2 class="sidfot-rubrik">Kontakt</h2>
+      <p><a href="tel:+4631235832">031-23 58 32</a><br><a href="mailto:info@mohlinskonditori.nu">info@mohlinskonditori.nu</a></p>
+      <p><a class="sidfot-fb" href="https://www.facebook.com/pages/Mohlins-Konditori/147769065398528" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a></p>
+    </div>
+  </div>
+  <div class="container sidfot-botten">
+    <p>© <span data-arsal>2026</span> Mohlins Konditori AB · Org.nr 556434-1153</p>
+    <p><a href="integritetspolicy.html">Integritetspolicy</a> · Inga spårningscookies</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+<script src="js/sortiment.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beställ tårta | Mohlins Konditori</title>
+  <meta name="description" content="Beställ tårta från Mohlins Konditori på Hisingen. Ordinarie tårtor senast dagen innan, specialtårtor minst tre dagar innan. Välj tårta, datum, text och färg.">
+  <meta name="theme-color" content="#c8202a">
+  <link rel="canonical" href="https://mohlinskonditori.se/bestall.html">
+  <meta property="og:title" content="Beställ tårta | Mohlins Konditori">
+  <meta property="og:description" content="Välj bland 24 klassiska tårtor eller beställ en specialtårta – bakad på plats i Tolered.">
+  <meta property="og:image" content="https://mohlinskonditori.se/img/foton/princess_sortiment.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=fraunces:400,600,600i,700,800|jost:400,500,600|sacramento:400&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<script src="js/ikoner.js"></script>
+<a class="hoppa" href="#innehall">Hoppa till innehållet</a>
+
+<div class="toppremsa">
+  <div class="container">
+    <span class="status" data-status>Mån–fre 07.00–18.30 · lör 07.00–14.00</span>
+    <div class="toppremsa-info">
+      <a class="adress" href="index.html#besok"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Gamla Björlandavägen 145</a>
+      <a href="tel:+4631235832"><svg class="icon" aria-hidden="true"><use href="#i-telefon"/></svg>031-23 58 32</a>
+    </div>
+  </div>
+</div>
+
+<header class="sidhuvud" data-sidhuvud>
+  <div class="container">
+    <a class="logga" href="index.html"><img src="img/foton/logoSmall.png" alt="Mohlins Konditori – till startsidan" width="789" height="500"></a>
+    <nav class="huvudmeny" aria-label="Huvudmeny" data-meny>
+      <button class="menyknapp" type="button" aria-expanded="false" aria-controls="menylista">
+        <svg class="icon" aria-hidden="true"><use href="#i-meny"/></svg><span>Meny</span>
+      </button>
+      <ul id="menylista">
+        <li><a href="sortiment.html">Sortiment</a></li>
+        <li><a href="index.html#tartor">Tårtor</a></li>
+        <li><a href="index.html#om-oss">Om oss</a></li>
+        <li><a href="index.html#besok">Hitta hit</a></li>
+        <li><a class="btn btn-primar btn-liten" href="bestall.html" aria-current="page">Beställ tårta</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="innehall">
+  <section class="sidrubrik">
+    <div class="markis markis--smal" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow">Tårtbeställning</p>
+      <h1>Beställ din <em>tårta</em></h1>
+      <p class="lead">Fyll i formuläret så skickas beställningen till oss. Vi hör av oss och bekräftar – först då är beställningen klar.</p>
+      <div class="regler">
+        <div class="info-kort"><span class="siffra">1</span><div><h3>dag innan</h3><p>för tårtor ur ordinarie sortiment</p></div></div>
+        <div class="info-kort"><span class="siffra">3</span><div><h3>dagar innan</h3><p>för specialtårtor</p></div></div>
+        <div class="info-kort"><svg class="icon" aria-hidden="true"><use href="#i-telefon"/></svg><div><h3>Hellre ringa?</h3><p><a href="tel:+4631235832">031-23 58 32</a></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sektion" style="padding-top: clamp(2rem, 4vw, 3rem)">
+    <div class="container bestall">
+      <form class="formular" id="bestallning" data-formular novalidate>
+        <noscript><p class="notis">Formuläret behöver JavaScript. Ring oss på 031-23 58 32 eller mejla info@mohlinskonditori.nu så hjälper vi dig.</p></noscript>
+
+        <div class="klart" data-klart hidden tabindex="-1">
+          <h2><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Nästan klart!</h2>
+          <p>Ditt mejlprogram bör nu ha öppnats med beställningen ifylld – tryck på <strong>Skicka</strong> där. Beställningen gäller när vi har bekräftat den.</p>
+          <p>Öppnades inget? Kopiera beställningen och mejla den till <a href="mailto:info@mohlinskonditori.nu">info@mohlinskonditori.nu</a>, eller ring oss på <a href="tel:+4631235832">031-23 58 32</a>.</p>
+          <div class="knappar">
+            <button class="btn btn-primar btn-liten" type="button" data-kopiera><svg class="icon" aria-hidden="true"><use href="#i-kopiera"/></svg><span>Kopiera beställningen</span></button>
+            <a class="btn btn-sekundar btn-liten" href="#" data-mejl-igen>Öppna mejlet igen</a>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend><span class="steg">1</span>Välj tårta</legend>
+          <div class="falt">
+            <label for="tarta">Tårta</label>
+            <select id="tarta" name="tarta" required aria-describedby="tarta-hjalp tarta-fel" data-tarta>
+              <option value="">Välj en tårta …</option>
+            </select>
+            <p class="hjalp" id="tarta-hjalp" data-tarta-info>Osäker? Titta bland alla tårtor i <a href="sortiment.html#tartor">sortimentet</a>.</p>
+            <p class="fel" id="tarta-fel" data-fel="tarta"></p>
+          </div>
+          <div class="falt">
+            <span class="falt-rubrik" id="bitar-rubrik">Antal bitar</span>
+            <div class="stegare">
+              <button type="button" data-steg="-1" aria-label="Färre bitar">−</button>
+              <input type="number" id="bitar" name="bitar" value="10" min="4" max="150" step="1" inputmode="numeric" aria-labelledby="bitar-rubrik">
+              <button type="button" data-steg="1" aria-label="Fler bitar">+</button>
+            </div>
+            <p class="hjalp">Räkna med ungefär en bit per gäst. Osäker? Vi hjälper dig gärna.</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="steg">2</span>Upphämtning</legend>
+          <div class="tva-kol">
+            <div class="falt">
+              <label for="datum">Datum</label>
+              <input type="date" id="datum" name="datum" required aria-describedby="datum-hjalp datum-fel">
+              <p class="hjalp" id="datum-hjalp" data-datum-hjalp>Välj tårta först, så ser du första möjliga dag.</p>
+              <p class="fel" id="datum-fel" data-fel="datum"></p>
+            </div>
+            <div class="falt">
+              <label for="tid">Tid</label>
+              <select id="tid" name="tid" required aria-describedby="tid-fel">
+                <option value="">Välj datum först</option>
+              </select>
+              <p class="fel" id="tid-fel" data-fel="tid"></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="steg">3</span>Text &amp; dekoration</legend>
+          <div class="falt">
+            <label for="text">Text på tårtan <span class="valfritt">(valfritt)</span></label>
+            <input type="text" id="text" name="text" maxlength="40" placeholder="T.ex. Grattis Emilia 5 år!" aria-describedby="text-hjalp">
+            <p class="hjalp" id="text-hjalp"><span data-tecken>40</span> tecken kvar. Texten skrivs på en marsipanskylt.</p>
+          </div>
+          <div class="falt">
+            <span class="falt-rubrik" id="farg-rubrik">Färgönskemål <span class="valfritt">(valfritt)</span></span>
+            <div class="fargval" role="radiogroup" aria-labelledby="farg-rubrik">
+              <label><input type="radio" name="farg" value="" checked><span class="ingen"><i></i>Ingen önskan</span></label>
+              <label><input type="radio" name="farg" value="Vit" data-hex="#fffaf0"><span><i style="--c: #fffaf0"></i>Vit</span></label>
+              <label><input type="radio" name="farg" value="Rosa" data-hex="#f6c6cf"><span><i style="--c: #f6c6cf"></i>Rosa</span></label>
+              <label><input type="radio" name="farg" value="Ljusgrön" data-hex="#c3e2b8"><span><i style="--c: #c3e2b8"></i>Ljusgrön</span></label>
+              <label><input type="radio" name="farg" value="Ljusblå" data-hex="#bdd9f2"><span><i style="--c: #bdd9f2"></i>Ljusblå</span></label>
+              <label><input type="radio" name="farg" value="Gul" data-hex="#f8e391"><span><i style="--c: #f8e391"></i>Gul</span></label>
+              <label><input type="radio" name="farg" value="Lila" data-hex="#dac6ef"><span><i style="--c: #dac6ef"></i>Lila</span></label>
+            </div>
+            <p class="hjalp">Syns i förhandsvisningen. Går en färg inte att göra på tårtan du valt hör vi av oss.</p>
+          </div>
+          <div class="falt">
+            <label for="onskemal">Övriga önskemål <span class="valfritt">(valfritt)</span></label>
+            <textarea id="onskemal" name="onskemal" rows="3" maxlength="600" placeholder="Tema, dekor eller inspiration – beskriv gärna så noga du kan."></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="steg">4</span>Allergier</legend>
+          <div class="falt">
+            <label for="allergier">Allergier eller specialkost <span class="valfritt">(valfritt)</span></label>
+            <textarea id="allergier" name="allergier" rows="2" maxlength="300" placeholder="T.ex. nötallergi eller laktosintolerans"></textarea>
+            <p class="hjalp">Vi kontaktar dig om vi behöver veta mer.</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="steg">5</span>Dina uppgifter</legend>
+          <div class="falt">
+            <label for="namn">Namn</label>
+            <input type="text" id="namn" name="namn" autocomplete="name" required aria-describedby="namn-fel">
+            <p class="fel" id="namn-fel" data-fel="namn"></p>
+          </div>
+          <div class="tva-kol">
+            <div class="falt">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" required aria-describedby="telefon-fel">
+              <p class="fel" id="telefon-fel" data-fel="telefon"></p>
+            </div>
+            <div class="falt">
+              <label for="epost">E-post <span class="valfritt">(valfritt)</span></label>
+              <input type="email" id="epost" name="epost" autocomplete="email" aria-describedby="epost-fel">
+              <p class="fel" id="epost-fel" data-fel="epost"></p>
+            </div>
+          </div>
+        </fieldset>
+
+      </form>
+
+      <aside class="kvitto-wrap" aria-label="Sammanfattning av din beställning">
+        <div class="kvitto-skugga">
+          <div class="kvitto">
+            <div class="kvitto-huvud">
+              <h2>BESTÄLLNING</h2>
+              <p>Mohlins Konditori · 031-23 58 32</p>
+            </div>
+            <div class="forhands" aria-hidden="true">
+              <div class="fat" data-forhands></div>
+              <div class="skylt" data-skylt></div>
+            </div>
+            <dl data-kvitto></dl>
+            <p class="kvitto-fot">Beställningen gäller när vi har bekräftat den via telefon eller mejl. Tack!</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="skicka-omrade">
+        <p class="samtycke">Vi använder dina uppgifter bara för att hantera din beställning. Läs mer i vår <a href="integritetspolicy.html">integritetspolicy</a>.</p>
+        <div class="skicka-rad">
+          <button class="btn btn-primar" type="submit" form="bestallning"><svg class="icon" aria-hidden="true"><use href="#i-mejl"/></svg>Skicka beställning</button>
+          <p class="hjalp">Ditt mejlprogram öppnas med beställningen ifylld.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="sidfot kant">
+  <div class="container sidfot-rutnat">
+    <div class="sidfot-varumarke">
+      <img class="sidfot-logga" src="img/foton/logoSmall.png" alt="Mohlins Konditori" width="789" height="500" loading="lazy">
+      <p>Bageri &amp; konditori på Hisingen sedan 1957.<br>Allt bakat på plats, på riktiga råvaror.</p>
+    </div>
+    <div>
+      <h2 class="sidfot-rubrik">Besök oss</h2>
+      <p>Gamla Björlandavägen 145<br>417 16 Göteborg</p>
+      <p><a href="index.html#besok">Hitta hit</a></p>
+    </div>
+    <div>
+      <h2 class="sidfot-rubrik">Öppettider</h2>
+      <p data-tider-kort>Mån – fre 07.00 – 18.30<br>Lördag 07.00 – 14.00<br>Söndag stängt</p>
+    </div>
+    <div>
+      <h2 class="sidfot-rubrik">Kontakt</h2>
+      <p><a href="tel:+4631235832">031-23 58 32</a><br><a href="mailto:info@mohlinskonditori.nu">info@mohlinskonditori.nu</a></p>
+      <p><a class="sidfot-fb" href="https://www.facebook.com/pages/Mohlins-Konditori/147769065398528" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a></p>
+    </div>
+  </div>
+  <div class="container sidfot-botten">
+    <p>© <span data-arsal>2026</span> Mohlins Konditori AB · Org.nr 556434-1153</p>
+    <p><a href="integritetspolicy.html">Integritetspolicy</a> · Inga spårningscookies</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+<script src="js/bestall.js"></script>
+</body>
+</html>
